@@ -5,7 +5,7 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
 @ConfigGroup("mirror")
-public interface MirrorConfig extends Config
+public interface MirrorConfig2 extends Config
 {
 	@ConfigItem(
 		position = 0,

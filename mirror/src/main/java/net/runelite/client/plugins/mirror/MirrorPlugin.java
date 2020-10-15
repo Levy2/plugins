@@ -50,27 +50,27 @@ import java.awt.image.BufferedImage;
  */
 @Extension
 @PluginDescriptor(
-	name = "Mirror",
+	name = "Mirror Levy",
 	description = "Create a new window with the game image minus the top overlay layer",
 	type = PluginType.UTILITY,
 	enabledByDefault = false
 )
-public class MirrorPlugin extends Plugin
+public class MirrorPlugin2 extends Plugin
 {
 
 	@Inject
 	private Client client;
 
 	@Inject
-	private MirrorConfig config;
+	private MirrorConfig2 config;
 
 	@Inject
 	private ClientThread clientThread;
 
 	@Provides
-	MirrorConfig getConfig(ConfigManager configManager)
+	MirrorConfig2 getConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(MirrorConfig.class);
+		return configManager.getConfig(MirrorConfig2.class);
 	}
 
 	public static JFrame jframe;
